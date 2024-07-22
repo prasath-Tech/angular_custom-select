@@ -1,0 +1,57 @@
+
+
+.toast-wapper{
+    position: relative;
+    width: 290px;
+    background: white;
+    border-radius: 5px;
+    .toast-content{
+        display: grid;
+        grid-template-columns: 90% 10%;
+        justify-items: center;
+        align-items: center;
+        padding: 5px; 
+        min-height: 30px;
+        .content{
+            font-size: 12px;
+            color: #565656;
+        }
+        .close-toast{
+            width:12px;
+            height:12px;
+            cursor: pointer;
+        }
+    }
+    .progress_bar{
+        height: 3px;
+        width: 100%;
+        transition: width 0.5s;
+        transition-timing-function: linear;
+    }
+}
+.neutral{
+    border:1px solid #089DD9;
+    .progress_bar{
+        background: #089DD9;
+    }
+}
+.success {
+    border:1px solid #00c851;
+    .progress_bar{
+        background: #00c851;
+    }
+}
+.failure {
+    border:1px solid #fc4e4e;
+    box-shadow: 0px 0px 10px #fc4e4e80;
+    .progress_bar{
+        background:#fc4e4e;
+    }
+}
+.warning{
+    border:1px solid#faef25;
+    box-shadow: 0px 0px 10px #faef2580;
+    .progress_bar{
+        background:#faef25;
+    }
+}

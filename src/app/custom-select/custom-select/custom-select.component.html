@@ -1,0 +1,6 @@
+<input #select type="text" [value]="selectedDisp" (click)="showDropdown()" placeholder="Select value" [class.disabled]="disabled">
+<ng-template cdk-portal #overlayTemplate="cdkPortal" class="dropdown">
+    <div class="dropdown-options-container">
+      <ng-content></ng-content> 
+    </div>
+</ng-template>

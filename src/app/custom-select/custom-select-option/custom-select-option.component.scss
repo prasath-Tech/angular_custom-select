@@ -1,0 +1,36 @@
+
+:host {
+  display: block;
+  padding: 0 14px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  white-space: nowrap;
+  overflow: clip;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  user-select: none;
+
+  &.selected {
+    color:  #0f7dc7;
+    font-weight: bold;
+  }
+
+  &:hover {
+    outline: none;
+    background-color:#c3c3d3;
+  }
+
+  &.active,
+  &:focus {
+    outline: none;
+    background-color:#c3c3d3;
+  }
+
+  &.hidden {
+    display: none;
+    height: 0;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="toast-wapper" [ngClass]="toastClass">
+    <div class="toast-content">
+      <div class="content">{{ data.text }}</div>
+      <img class="close-toast" (click)="close()" src="assets/close-outline.svg">
+    </div>
+    <div class="progress_bar" #element>
+    </div>
+</div>

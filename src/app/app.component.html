@@ -1,0 +1,30 @@
+<div class="container">
+  <h4>  </h4>
+
+  <div class="input-wrapper">
+    <custom-select [formControl]="selected_state">
+      <ng-container *ngFor="let option of options">
+        <custom-select-option [value]="option.value" >{{option.label}}</custom-select-option>
+      </ng-container>
+    </custom-select>
+    <img src="assets/disable-outline.svg" [title]="selected_state.disabled ? 'enable' :'disable'" (click)="disable_control()">
+    <img src="assets/clear-outline.svg" title="clear" (click)="clear_value()">
+  </div>
+  
+  <div>
+    <h4> Select any one of the chips</h4>
+    <div class="chip-container">
+      <ng-container  *ngFor="let option of options">
+        <div class="chip" (click)="chip_click(option.value)">
+          {{option.label}}
+        </div>
+      </ng-container>
+    </div>
+        
+  </div>
+
+</div>
+
+
+
+<router-outlet /> 

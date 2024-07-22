@@ -1,0 +1,23 @@
+input{
+    width: 25vw;
+    height: 5vh;
+    border: none;
+    border-bottom: 0.5px solid black;
+    cursor: pointer;
+    caret-color: transparent;
+
+    &:focus{
+        outline: none;
+        border-bottom: 0.5px solid rgb(58, 156, 208);
+    }
+
+    &.disabled{
+        cursor: default;
+        border-bottom: 0.5px solid black;
+    }
+}
+
+.dropdown-options-container{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    width: 100%;
+}

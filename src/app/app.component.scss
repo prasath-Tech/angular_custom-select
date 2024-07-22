@@ -1,0 +1,31 @@
+
+.container{
+    height:100vh;
+
+    .input-wrapper{
+        display: flex;
+        align-items: flex-end;
+        gap: 1vw;
+
+        img{
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .chip-container{
+        display: flex;
+        gap: 2vw;
+
+        .chip{
+            padding: 1vh 0.5vw;
+            box-shadow: 0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px 1px rgba(9, 30, 66, 0.13);
+            cursor: pointer;
+
+            &:hover{
+                background: #e6e9ed;
+            }
+        }
+
+    }
+}
